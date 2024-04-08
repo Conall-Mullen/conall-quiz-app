@@ -1,0 +1,10 @@
+.bookmark-button {
+  size: 1%;
+}
+
+.bookmark-icon {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 10%;
+}

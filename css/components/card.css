@@ -31,5 +31,13 @@
   border-radius: var(--border-radius);
   align-items: center;
   border: 2px solid orange;
-  gap: 1em;
+  gap: 5%;
+}
+
+h3 {
+  margin: 1%;
+}
+
+p {
+  margin: 1%;
 }
