@@ -3,6 +3,7 @@
   --secondary-colour: #5f374b;
   --ternary-colour: #8c6a5d;
   --detail-colour: #eee4b1;
+  --border-radius: 10px;
 }
 * {
   background-color: var(--primary-colour);
