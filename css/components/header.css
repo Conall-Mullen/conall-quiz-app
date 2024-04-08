@@ -1,0 +1,15 @@
+header {
+  background-color: var(--ternary-colour);
+  margin: auto;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  background-color: var(--ternary-colour);
+  color: var(--secondary-colour);
+}
