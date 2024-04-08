@@ -14,3 +14,9 @@
   cursor: pointer;
   border: none;
 }
+
+.text-button {
+  color: var(--secondary-colour);
+  cursor: pointer;
+  border: none;
+}
