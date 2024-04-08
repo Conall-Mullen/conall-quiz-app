@@ -5,6 +5,9 @@
   width: 4em;
   height: 4em;
 }
+.nav-icon {
+  background-color: var(--ternary-colour);
+}
 .pic-button {
   position: absolute;
   top: 0;
@@ -26,7 +29,7 @@
 }
 
 .text-button {
-  color: var(--secondary-colour);
+  color: var(--ternary-colour);
   cursor: pointer;
   border: none;
 }

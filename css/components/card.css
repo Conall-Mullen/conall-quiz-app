@@ -12,13 +12,6 @@
   border-radius: var(--border-radius);
 }
 
-.card-section h2 {
-  padding: 2px;
-  margin: 2px;
-  background-color: var(--ternary-colour);
-  color: var(--secondary-colour);
-}
-
 .card {
   position: relative;
   padding: 7%;

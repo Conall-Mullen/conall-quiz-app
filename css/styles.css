@@ -1,8 +1,8 @@
 :root {
-  --primary-colour: #430a5d;
-  --secondary-colour: #5f374b;
-  --ternary-colour: #8c6a5d;
-  --detail-colour: #eee4b1;
+  --primary-colour: #222831;
+  --secondary-colour: #31363f;
+  --ternary-colour: #76abae;
+  --detail-colour: #eeeeee;
   --border-colour: #ffa500;
   --border-radius: 10px;
 }
