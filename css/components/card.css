@@ -21,7 +21,7 @@
 
 .card {
   position: relative;
-  padding: 1%;
+  padding: 7%;
   margin: 1%;
   width: 80%;
   height: 100px;
@@ -31,7 +31,7 @@
   border-radius: var(--border-radius);
   align-items: center;
   border: 2px solid orange;
-  gap: 5%;
+  gap: 25%;
 }
 
 h3 {
