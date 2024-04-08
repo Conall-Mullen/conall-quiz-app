@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-around;
   top: 5em;
-  width: 75%;
+  width: 50%;
   background-color: var(--ternary-colour);
   color: var(--detail-colour);
   border-radius: var(--border-radius);
@@ -30,7 +30,7 @@
   flex-direction: column;
   border-radius: var(--border-radius);
   align-items: center;
-  border: 2px solid orange;
+  border: 2px solid var(--border-colour);
   gap: 25%;
 }
 
