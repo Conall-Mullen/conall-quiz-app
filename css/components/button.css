@@ -1,0 +1,35 @@
+.icon {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 4em;
+  height: 4em;
+}
+.nav-icon {
+  background-color: var(--ternary-colour);
+}
+.pic-button {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 4em;
+  height: 4em;
+  cursor: pointer;
+  border: none;
+}
+.nav-button {
+  position: relative;
+
+  width: 4em;
+  height: 4em;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--ternary-colour);
+}
+
+.text-button {
+  color: var(--ternary-colour);
+  cursor: pointer;
+  border: none;
+}

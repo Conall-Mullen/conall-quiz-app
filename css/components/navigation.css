@@ -1,0 +1,17 @@
+nav {
+  position: fixed;
+  bottom: 2em;
+  left: 2em;
+  padding: 1%;
+  margin: 0;
+  height: 3em;
+  width: 12%;
+
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  border-radius: var(--border-radius);
+  background-color: var(--ternary-colour);
+  align-items: center;
+  justify-content: center;
+}

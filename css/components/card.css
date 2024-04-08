@@ -6,22 +6,15 @@
   align-items: center;
   justify-content: space-around;
   top: 5em;
-  width: 75%;
+  width: 50%;
   background-color: var(--ternary-colour);
   color: var(--detail-colour);
   border-radius: var(--border-radius);
 }
 
-.card-section h2 {
-  padding: 2px;
-  margin: 2px;
-  background-color: var(--ternary-colour);
-  color: var(--secondary-colour);
-}
-
 .card {
   position: relative;
-  padding: 1%;
+  padding: 7%;
   margin: 1%;
   width: 80%;
   height: 100px;
@@ -30,6 +23,14 @@
   flex-direction: column;
   border-radius: var(--border-radius);
   align-items: center;
-  border: 2px solid orange;
-  gap: 1em;
+  border: 2px solid var(--border-colour);
+  gap: 25%;
+}
+
+h3 {
+  margin: 1%;
+}
+
+p {
+  margin: 1%;
 }
