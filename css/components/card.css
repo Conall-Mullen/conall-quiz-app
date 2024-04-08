@@ -1,0 +1,35 @@
+.card-section {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  top: 5em;
+  width: 75%;
+  background-color: var(--ternary-colour);
+  color: var(--detail-colour);
+  border-radius: var(--border-radius);
+}
+
+.card-section h2 {
+  padding: 2px;
+  margin: 2px;
+  background-color: var(--ternary-colour);
+  color: var(--secondary-colour);
+}
+
+.card {
+  position: relative;
+  padding: 1%;
+  margin: 1%;
+  width: 80%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  align-items: center;
+  border: 2px solid orange;
+  gap: 1em;
+}
