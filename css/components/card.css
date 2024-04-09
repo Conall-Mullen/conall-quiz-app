@@ -15,7 +15,7 @@
 .card {
   position: relative;
   padding: 7%;
-  margin: 1%;
+  margin: 4%;
   width: 80%;
   height: 100px;
   display: flex;
@@ -23,8 +23,28 @@
   flex-direction: column;
   border-radius: var(--border-radius);
   align-items: center;
-  border: 2px solid var(--border-colour);
+  border: none;
   gap: 25%;
+}
+
+.profile-card {
+  position: relative;
+  padding: 2%;
+  margin: 1%;
+  width: 88%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  align-items: flex-start;
+  border: none;
+  gap: 25%;
+}
+
+.profile-card h2 {
+  height: 20px;
+  margin: 1px;
 }
 
 h3 {
@@ -33,4 +53,5 @@ h3 {
 
 p {
   margin: 1%;
+  height: 10%;
 }
