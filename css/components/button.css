@@ -2,8 +2,8 @@
   position: relative;
   top: 0;
   right: 0;
-  width: 4em;
-  height: 4em;
+  width: 3em;
+  height: 3em;
 }
 .nav-icon {
   background-color: var(--ternary-colour);
@@ -11,17 +11,17 @@
 .pic-button {
   position: absolute;
   top: 0;
-  right: 10%;
-  width: 4em;
-  height: 4em;
+  right: 5%;
+  width: 3em;
+  height: 3em;
   cursor: pointer;
   border: none;
 }
 .nav-button {
   position: relative;
 
-  width: 4em;
-  height: 4em;
+  width: 3em;
+  height: 3em;
   cursor: pointer;
   border: none;
   border-radius: var(--border-radius);
