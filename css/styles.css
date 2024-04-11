@@ -31,6 +31,12 @@ p {
     width: 2em;
     height: 2em;
   }
+
+  nav {
+    left: 2%;
+    padding: 5%;
+    height: 6em;
+  }
   .nav-button {
     width: 2em;
     height: 2em;
