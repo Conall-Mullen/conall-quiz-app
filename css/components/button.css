@@ -7,6 +7,7 @@
 }
 .nav-icon {
   background-color: var(--ternary-colour);
+  border-radius: 10px;
 }
 .pic-button {
   position: absolute;
