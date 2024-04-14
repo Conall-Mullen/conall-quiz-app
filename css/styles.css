@@ -22,7 +22,7 @@ p {
   text-align: center;
 }
 
-@media (max-width: 530px) {
+@media (max-width: 790px) {
   .icon {
     width: 2em;
     height: 2em;
@@ -33,7 +33,7 @@ p {
   }
 
   nav {
-    left: 2%;
+    left: 6px;
     padding: 5%;
     height: 6em;
   }
@@ -41,7 +41,16 @@ p {
     width: 2em;
     height: 2em;
   }
+  .hashtags {
+    margin-right: 75px;
+  }
   p {
-    font-size: small;
+    font-size: x-small;
+  }
+  span {
+    font-size: x-small;
+  }
+  button {
+    font-size: x-small;
   }
 }

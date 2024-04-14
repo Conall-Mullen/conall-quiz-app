@@ -4,9 +4,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   top: 5em;
   width: 75%;
+  padding: 1%;
   background-color: var(--ternary-colour);
   color: var(--detail-colour);
   border-radius: var(--border-radius);
@@ -14,17 +14,17 @@
 
 .card {
   position: relative;
-  padding: 7%;
-  margin: 4%;
-  width: 80%;
-  height: 100px;
+  padding: 1%;
+  margin: 2%;
+  width: 90%;
+  height: 162px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  border-radius: var(--border-radius);
+  justify-content: center;
   align-items: center;
   border: none;
-  gap: 25%;
+  border-radius: var(--border-radius);
+  gap: 5%;
 }
 
 .profile-card {
