@@ -47,15 +47,25 @@
   margin: 1px;
 }
 
-h3 {
-  margin: 1%;
-}
-
-p {
+.card__question {
   margin: 1%;
   height: 10%;
 }
+.card__text-button {
+  color: var(--ternary-colour);
+  cursor: pointer;
+  border: none;
+}
 
-.hashtags {
+.card__pic-button {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+  border: none;
+}
+.card__hashtags {
   margin-right: auto;
 }
