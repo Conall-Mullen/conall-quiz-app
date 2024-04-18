@@ -5,17 +5,17 @@
   flex-direction: column;
   align-items: center;
   top: 5em;
-  width: 75%;
+  width: 60%;
   padding: 1%;
   background-color: var(--ternary-colour);
   color: var(--detail-colour);
   border-radius: var(--border-radius);
+  height: auto;
 }
 
 .card {
   position: relative;
   padding: 1%;
-  margin: 2%;
   width: 90%;
   height: 162px;
   display: flex;
@@ -24,7 +24,7 @@
   align-items: center;
   border: none;
   border-radius: var(--border-radius);
-  gap: 5%;
+  margin: 1em;
 }
 
 .profile-card {
@@ -42,14 +42,16 @@
   gap: 25%;
 }
 
-.profile-card h2 {
-  height: 20px;
-  margin: 1px;
-}
-
 .card__question {
-  margin: 1%;
-  height: 10%;
+  font-size: 15px;
+  width: 52%;
+  text-align: center;
+}
+.card__answer {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  width: 52%;
 }
 .card__text-button {
   color: var(--ternary-colour);
@@ -60,12 +62,20 @@
 .card__pic-button {
   position: absolute;
   top: 0;
-  right: 5%;
-  width: 3em;
-  height: 3em;
+  right: 0;
+
   cursor: pointer;
   border: none;
+  background-color: rgba(0, 0, 0, 0);
+
+  margin: 1%;
 }
 .card__hashtags {
-  margin-right: auto;
+  position: relative;
+
+  width: 90%;
+  margin: 1%;
+  font-size: 9px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0);
 }
