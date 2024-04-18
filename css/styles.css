@@ -15,42 +15,32 @@
 * {
   background-color: var(--primary-colour);
   box-sizing: content-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
-  text-align: center;
-}
-
-@media (max-width: 790px) {
+@media (max-width: 430px) {
   .icon {
     width: 2em;
     height: 2em;
   }
-  .pic-button {
+  .card-button__pic {
     width: 2em;
     height: 2em;
   }
 
-  nav {
-    left: 6px;
-    padding: 5%;
-    height: 6em;
+  .card__question {
+    font-size: 14px;
   }
-  .nav-button {
+
+  .card__answer {
+    font-size: 13px;
+  }
+  .card__hashtag {
+    font-size: 10px;
+  }
+
+  .nav-icon {
     width: 2em;
     height: 2em;
-  }
-  .hashtags {
-    margin-right: 75px;
-  }
-  p {
-    font-size: x-small;
-  }
-  span {
-    font-size: x-small;
-  }
-  button {
-    font-size: x-small;
   }
 }

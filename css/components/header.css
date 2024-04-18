@@ -6,7 +6,7 @@ header {
   align-items: center;
   justify-content: space-around;
   top: 2em;
-  width: 75%;
+  width: 50%;
   background-color: var(--ternary-colour);
   color: var(--detail-colour);
   border-radius: var(--border-radius);
@@ -14,6 +14,6 @@ header {
 }
 
 h1 {
-  background-color: var(--ternary-colour);
+  background-color: rgba(0, 0, 0, 0);
   color: var(--secondary-colour);
 }
