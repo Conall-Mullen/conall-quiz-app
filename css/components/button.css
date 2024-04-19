@@ -5,6 +5,9 @@
   padding: 0.25em;
   background-color: rgba(0, 0, 0, 0);
 }
+.icon__filled {
+  src: "./resources/bookmark_filled.png";
+}
 
 .nav-button {
   position: relative;
