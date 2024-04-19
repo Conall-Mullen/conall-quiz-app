@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./form.js" defer></script>
     <title>Add new questions</title>
   </head>
   <body>
     <header class="header">
       <h1>Add New Questions</h1>
     </header>
-    <main class="card-section">
-      <form>
+    <main class="card-section" data-js="form-main">
+      <form data-js="form">
         <label for="your-question" class="form__question-label"
           >Question:
         </label>
@@ -34,6 +35,7 @@
         <input name="your-tags" id="your-tags" type="text" class="form__tags" />
         <label for="your-form-submit"></label>
         <button
+          data-js="form-submit-button"
           name="your-form-submit"
           id="your-form-submit"
           type="submit"
