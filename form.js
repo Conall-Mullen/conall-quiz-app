@@ -1,18 +1,20 @@
 console.clear();
 console.log("running");
 
-const formMain = document.querySelector('[data-js="form-main"]');
-const form = document.querySelector('[data-js="form"]');
+const formMain = document.querySelector('[data-js="form-main"]'); //The main section of the html
+const form = document.querySelector('[data-js="form"]'); //The form
 const formSubmitButton = document.querySelector(
   '[data-js="form-submit-button"]'
 );
 
 function addNewQuestion(event) {
-  event.preventDefault();
+  event.preventDefault(); //Prevents page from refreshing when submit is clicked
+
   const formData = new FormData(event.target);
-  const data = Object.fromEntries(formData);
+  const data = Object.fromEntries(formData); //get readable data about from the form when submitted
   console.log(data);
 
+  /* All new elements must be declared in the function so that a new card is generated each time*/
   const newCard = document.createElement("section");
   newCard.classList.add("card");
 
@@ -40,8 +42,9 @@ function addNewQuestion(event) {
   newBookmarkPic.setAttribute("src", "resources/bookmark_transparent.png");
   newBookmarkPic.setAttribute("alt", "a bookmark icon");
 
-  formMain.append(newCard);
+  formMain.append(newCard); //append new card to main section
   newCard.append(
+    //append all children of card to card
     newQuestion,
     newAnswerButton,
     newAnswer,
@@ -49,6 +52,6 @@ function addNewQuestion(event) {
     newBookmarkButton
   );
 
-  newBookmarkButton.append(newBookmarkPic);
+  newBookmarkButton.append(newBookmarkPic); //appened picture to button
 }
-form.addEventListener("submit", addNewQuestion);
+form.addEventListener("submit", addNewQuestion); //Executes addNewQuestion when submit button is clicked
