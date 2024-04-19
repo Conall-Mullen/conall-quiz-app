@@ -83,7 +83,3 @@
 .hidden {
   visibility: hidden;
 }
-
-.icon-filled {
-  content: url("./resources/bookmark_filled.png");
-}
