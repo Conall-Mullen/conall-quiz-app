@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./script.js" defer></script>
 
     <title>Quiz App</title>
   </head>
@@ -16,10 +17,16 @@
         <p class="card__question">
           When did Berlin first become the capital of Germany?
         </p>
-        <button type="button" class="card__text-button">Reveal answer</button>
-        <p class="card__answer">1871</p>
+        <button
+          type="button"
+          class="card__text-button"
+          data-js="card-text-button"
+        >
+          Reveal answer
+        </button>
+        <p class="card__answer" data-js="card-answer">1871</p>
         <p class="card__hashtags">#Berlin #Hauptstadt #Deutschland</p>
-        <a type="button" class="card__pic-button">
+        <a type="button" class="card__pic-button" data-js="card-pic-button">
           <img
             class="icon"
             src="./resources/bookmark_transparent.png"
