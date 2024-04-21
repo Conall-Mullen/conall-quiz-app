@@ -6,6 +6,15 @@ const form = document.querySelector('[data-js="form"]'); //The form
 const formSubmitButton = document.querySelector(
   '[data-js="form-submit-button"]'
 );
+const formQuestionInput = document.querySelector('[data-js="question-input"]');
+const formAnswerInput = document.querySelector('[data-js="answer-input"]');
+
+const questionCharacterCount = document.querySelector(
+  '[data-js="question-character-count"]'
+);
+const answerCharacterCount = document.querySelector(
+  '[data-js="answer-character-count"]'
+);
 
 function addNewQuestion(event) {
   event.preventDefault(); //Prevents page from refreshing when submit is clicked
@@ -55,3 +64,31 @@ function addNewQuestion(event) {
   newBookmarkButton.append(newBookmarkPic); //appened picture to button
 }
 form.addEventListener("submit", addNewQuestion); //Executes addNewQuestion when submit button is clicked
+
+// function characterCount(event) {
+//   let maxLength = event.target.maxLength;
+//   let count = event.target.value.length;
+//   let remainingCharacters = maxLength - count;
+
+//   console.log(remainingCharacters);
+//   return remainingCharacters;
+// }
+
+// formQuestionInput.addEventListener("input", characterCount);
+// formAnswerInput.addEventListener("input", characterCount);
+
+formQuestionInput.addEventListener("input", (event) => {
+  let maxLength = event.target.maxLength;
+  let count = event.target.value.length;
+  let remainingCharacters = maxLength - count;
+
+  questionCharacterCount.textContent = `${remainingCharacters} characters remaining`;
+});
+
+formAnswerInput.addEventListener("input", (event) => {
+  let maxLength = event.target.maxLength;
+  let count = event.target.value.length;
+  let remainingCharacters = maxLength - count;
+
+  answerCharacterCount.textContent = `${remainingCharacters} characters remaining`;
+});
