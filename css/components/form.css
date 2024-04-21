@@ -1,0 +1,43 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+.form__label {
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--secondary-colour);
+  margin-top: 1em;
+}
+
+.form__field {
+  border: 2px solid var(--secondary-colour);
+  border-radius: var(--border-radius);
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2%;
+  display: flex;
+  width: 100%;
+  height: 90%;
+
+  margin: 2%;
+  resize: none;
+}
+.form__submit-button {
+  color: var(--secondary-colour);
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border: none;
+  margin: 1em;
+  font-size: 20px;
+}
+
+.form__character-count {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--secondary-colour);
+  margin: 0;
+  font-size: 12px;
+  width: 100%;
+  text-align: right;
+}

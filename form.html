@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./form.js" defer></script>
+    <title>Add new questions</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Add New Questions</h1>
+    </header>
+    <main class="card-section" data-js="form-main">
+      <form data-js="form">
+        <label for="your-question" class="form__label">Question: </label>
+        <textarea
+          data-js="question-input"
+          class="form__field"
+          name="your-question"
+          id="your-question"
+          cols="30"
+          rows="2"
+          maxlength="150"
+        ></textarea>
+        <p data-js="question-character-count" class="form__character-count">
+          150 characters remaining
+        </p>
+        <label for="your-answer" class="form__label">Answer: </label>
+        <textarea
+          data-js="answer-input"
+          class="form__field"
+          name="your-answer"
+          id="your-answer"
+          cols="30"
+          rows="2"
+          maxlength="150"
+        ></textarea>
+        <p data-js="answer-character-count" class="form__character-count">
+          150 characters remaining
+        </p>
+        <label for="your-tags" class="form__label">Tags: </label>
+        <input
+          name="your-tags"
+          id="your-tags"
+          type="text"
+          class="form__field"
+        />
+        <label for="your-form-submit"></label>
+        <button
+          data-js="form-submit-button"
+          name="your-form-submit"
+          id="your-form-submit"
+          type="submit"
+          class="form__submit-button"
+        >
+          Submit
+        </button>
+      </form>
+    </main>
+    <nav>
+      <a href="index.html" type="button" class="nav-button">
+        <img
+          class="icon nav-icon"
+          src="./resources/home.png"
+          alt="a homepage icon"
+      /></a>
+      <a href="bookmarks.html" type="button" class="nav-button">
+        <img
+          class="icon nav-icon"
+          src="./resources/bookmark_transparent.png"
+          alt="a bookmark icon"
+      /></a>
+      <a href="form.html" type="button" class="nav-button">
+        <img
+          class="icon nav-icon"
+          src="./resources/add_filled.png"
+          alt="a profile icon"
+      /></a>
+      <a href="profile.html" type="button" class="nav-button">
+        <img
+          class="icon nav-icon"
+          src="./resources/profile.png"
+          alt="a profile icon"
+      /></a>
+    </nav>
+  </body>
+</html>
