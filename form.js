@@ -24,6 +24,9 @@ function addNewQuestion(event) {
   console.log(data);
 
   /* All new elements must be declared in the function so that a new card is generated each time*/
+  const newCardSection = document.createElement("section");
+  newCardSection.classList.add("card-section");
+
   const newCard = document.createElement("section");
   newCard.classList.add("card");
 
@@ -52,6 +55,7 @@ function addNewQuestion(event) {
   newBookmarkPic.setAttribute("alt", "a bookmark icon");
 
   formMain.append(newCard); //append new card to main section
+
   newCard.append(
     //append all children of card to card
     newQuestion,

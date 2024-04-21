@@ -13,32 +13,39 @@
     </header>
     <main class="card-section" data-js="form-main">
       <form data-js="form">
-        <label for="your-question" class="form__question-label"
-          >Question:
-        </label>
+        <label for="your-question" class="form__label">Question: </label>
         <textarea
           data-js="question-input"
-          class="form__question"
+          class="form__field"
           name="your-question"
           id="your-question"
           cols="30"
           rows="2"
           maxlength="150"
         ></textarea>
-        <p data-js="question-character-count">150 characters remaining</p>
-        <label for="your-answer" class="form__answer-label">Answer: </label>
+        <p data-js="question-character-count" class="form__character-count">
+          150 characters remaining
+        </p>
+        <label for="your-answer" class="form__label">Answer: </label>
         <textarea
           data-js="answer-input"
-          class="form__answer"
+          class="form__field"
           name="your-answer"
           id="your-answer"
           cols="30"
           rows="2"
           maxlength="150"
         ></textarea>
-        <p data-js="answer-character-count">150 characters remaining</p>
-        <label for="your-tags" class="form__tags-label">Tags: </label>
-        <input name="your-tags" id="your-tags" type="text" class="form__tags" />
+        <p data-js="answer-character-count" class="form__character-count">
+          150 characters remaining
+        </p>
+        <label for="your-tags" class="form__label">Tags: </label>
+        <input
+          name="your-tags"
+          id="your-tags"
+          type="text"
+          class="form__field"
+        />
         <label for="your-form-submit"></label>
         <button
           data-js="form-submit-button"
