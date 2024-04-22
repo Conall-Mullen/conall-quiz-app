@@ -66,6 +66,9 @@ function addNewQuestion(event) {
   );
 
   newBookmarkButton.append(newBookmarkPic); //appened picture to button
+  form.reset();
+  questionCharacterCount.textContent = `${150} characters remaining`;
+  answerCharacterCount.textContent = `${150} characters remaining`;
 }
 form.addEventListener("submit", addNewQuestion); //Executes addNewQuestion when submit button is clicked
 
@@ -85,7 +88,6 @@ formQuestionInput.addEventListener("input", (event) => {
   let maxLength = event.target.maxLength;
   let count = event.target.value.length;
   let remainingCharacters = maxLength - count;
-
   questionCharacterCount.textContent = `${remainingCharacters} characters remaining`;
 });
 
@@ -96,3 +98,6 @@ formAnswerInput.addEventListener("input", (event) => {
 
   answerCharacterCount.textContent = `${remainingCharacters} characters remaining`;
 });
+
+//When the form is reset the character count should go back to 150
+//

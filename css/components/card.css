@@ -83,11 +83,17 @@
   margin: 1%;
 }
 .card__hashtags {
+  padding: 0;
+  padding-left: 5%;
+  width: 100%;
+  display: flex;
   position: relative;
   color: var(--secondary-colour);
   background-color: rgba(0, 0, 0, 0);
   font-size: 12px;
   margin: 0;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .hidden {
