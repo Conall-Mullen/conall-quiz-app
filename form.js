@@ -15,6 +15,7 @@ const questionCharacterCount = document.querySelector(
 const answerCharacterCount = document.querySelector(
   '[data-js="answer-character-count"]'
 );
+let count = 0;
 
 function addNewQuestion(event) {
   event.preventDefault(); //Prevents page from refreshing when submit is clicked
@@ -24,6 +25,7 @@ function addNewQuestion(event) {
   console.log(data);
 
   /* All new elements must be declared in the function so that a new card is generated each time*/
+
   const newCardSection = document.createElement("section");
   newCardSection.classList.add("card-section");
 
@@ -34,13 +36,15 @@ function addNewQuestion(event) {
   newQuestion.textContent = data["your-question"];
   newQuestion.classList.add("card__question");
 
-  const newAnswerButton = document.createElement("section");
+  const newAnswerButton = document.createElement("a");
   newAnswerButton.textContent = "Reveal Answer";
   newAnswerButton.classList.add("card__text-button");
+  newAnswerButton.id = `new-answer-button-${count}`;
 
   const newAnswer = document.createElement("p");
   newAnswer.textContent = data["your-answer"];
   newAnswer.classList.add("card__answer");
+  newAnswer.id = `new-answer-${count}`;
 
   const newTags = document.createElement("p");
   newTags.textContent = data["your-tags"];
@@ -53,6 +57,7 @@ function addNewQuestion(event) {
   newBookmarkPic.classList.add("icon");
   newBookmarkPic.setAttribute("src", "icons/bookmark.svg");
   newBookmarkPic.setAttribute("alt", "a bookmark icon");
+  newBookmarkPic.id = `new-bookmark-button-${count}`;
 
   formMain.append(newCard); //append new card to main section
 
@@ -67,22 +72,12 @@ function addNewQuestion(event) {
 
   newBookmarkButton.append(newBookmarkPic); //appened picture to button
   form.reset();
-  questionCharacterCount.textContent = `${150} characters remaining`;
-  answerCharacterCount.textContent = `${150} characters remaining`;
+  questionCharacterCount.textContent = `${formQuestionInput.maxLength} characters remaining`;
+  answerCharacterCount.textContent = `${formAnswerInput.maxLength} characters remaining`;
+
+  count++;
 }
 form.addEventListener("submit", addNewQuestion); //Executes addNewQuestion when submit button is clicked
-
-// function characterCount(event) {
-//   let maxLength = event.target.maxLength;
-//   let count = event.target.value.length;
-//   let remainingCharacters = maxLength - count;
-
-//   console.log(remainingCharacters);
-//   return remainingCharacters;
-// }
-
-// formQuestionInput.addEventListener("input", characterCount);
-// formAnswerInput.addEventListener("input", characterCount);
 
 formQuestionInput.addEventListener("input", (event) => {
   let maxLength = event.target.maxLength;
@@ -99,5 +94,25 @@ formAnswerInput.addEventListener("input", (event) => {
   answerCharacterCount.textContent = `${remainingCharacters} characters remaining`;
 });
 
-//When the form is reset the character count should go back to 150
-//
+formMain.addEventListener("click", (event) => {
+  if (event.target.classList.contains("icon")) {
+    if (event.target.alt == "a bookmark icon") {
+      event.target.setAttribute("src", "icons/bookmark_filled.svg");
+      event.target.setAttribute("alt", "a filled bookmark icon");
+    } else {
+      event.target.setAttribute("src", "icons/bookmark.svg");
+      event.target.setAttribute("alt", "a bookmark icon");
+    }
+  }
+});
+// function characterCount(event) {
+//   let maxLength = event.target.maxLength;
+//   let count = event.target.value.length;
+//   let remainingCharacters = maxLength - count;
+
+//   console.log(remainingCharacters);
+//   return remainingCharacters;
+// }
+
+// formQuestionInput.addEventListener("input", characterCount);
+// formAnswerInput.addEventListener("input", characterCount);
