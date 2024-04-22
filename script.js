@@ -7,6 +7,9 @@ const picButtonImage = document.querySelector(
   '[data-js="card-pic-button-image"]'
 );
 const answer = document.querySelector('[data-js="card-answer"]');
+const darkModeSwitch = document.querySelector('[data-js="switch"]');
+
+console.dir(darkModeSwitch);
 
 function toggleAnswerButton() {
   answer.classList.toggle("hidden"); //toggles the class "hidden" for the answer element which hides/reveals the text
@@ -18,10 +21,10 @@ function toggleAnswerButton() {
 
 function togglePicButton() {
   if (picButtonImage.alt == "a bookmark icon") {
-    picButtonImage.setAttribute("src", "resources/bookmark_filled.png");
+    picButtonImage.setAttribute("src", "icons/bookmark_filled.svg");
     picButtonImage.setAttribute("alt", "a filled bookmark icon");
   } else {
-    picButtonImage.setAttribute("src", "resources/bookmark_transparent.png");
+    picButtonImage.setAttribute("src", "icons/bookmark.svg");
     picButtonImage.setAttribute("alt", "a bookmark icon");
   }
 }

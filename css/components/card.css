@@ -22,8 +22,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: none;
+  border: 2px solid var(--secondary-colour);
   border-radius: var(--border-radius);
+  background-color: rgba(0, 0, 0, 0.1);
   margin: 1em;
 }
 
@@ -46,38 +47,46 @@
   font-size: 15px;
   width: 52%;
   text-align: center;
+  color: var(--secondary-colour);
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  margin-top: 1em;
 }
 .card__answer {
   text-align: center;
   margin: auto;
   font-size: 15px;
   width: 52%;
+  color: var(--secondary-colour);
+  background-color: rgba(0, 0, 0, 0);
 }
 .card__text-button {
-  color: var(--ternary-colour);
+  color: var(--secondary-colour);
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 1em;
   cursor: pointer;
-  border: none;
+  border: 2px solid var(--secondary-colour);
+  border-radius: var(--border-radius);
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1%;
+  width: 8em;
 }
 
 .card__pic-button {
   position: absolute;
   top: 0;
   right: 0;
-
   cursor: pointer;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-
   margin: 1%;
 }
 .card__hashtags {
   position: relative;
-
-  width: 90%;
-  margin: 1%;
-  font-size: 9px;
-  text-align: left;
+  color: var(--secondary-colour);
   background-color: rgba(0, 0, 0, 0);
+  font-size: 12px;
+  margin: 0;
 }
 
 .hidden {

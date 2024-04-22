@@ -26,11 +26,15 @@ form {
 }
 .form__submit-button {
   color: var(--secondary-colour);
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
   border: none;
   margin: 1em;
   font-size: 20px;
+  border: 2px solid var(--secondary-colour);
+  border-radius: var(--border-radius);
+  padding: 1%;
+  width: 4em;
 }
 
 .form__character-count {
