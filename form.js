@@ -51,7 +51,7 @@ function addNewQuestion(event) {
 
   const newBookmarkPic = document.createElement("img");
   newBookmarkPic.classList.add("icon");
-  newBookmarkPic.setAttribute("src", "resources/bookmark_transparent.png");
+  newBookmarkPic.setAttribute("src", "icons/bookmark.svg");
   newBookmarkPic.setAttribute("alt", "a bookmark icon");
 
   formMain.append(newCard); //append new card to main section

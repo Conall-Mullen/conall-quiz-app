@@ -62,7 +62,7 @@
 }
 .card__text-button {
   color: var(--secondary-colour);
-  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
   margin-top: 1em;
   cursor: pointer;
   border: 2px solid var(--secondary-colour);
@@ -74,6 +74,7 @@
 
 .card__pic-button {
   position: absolute;
+
   top: 0;
   right: 0;
   cursor: pointer;
